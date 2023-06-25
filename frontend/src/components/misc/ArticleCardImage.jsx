@@ -48,7 +48,7 @@ export function ArticleCardImage({ title, category, image, id }) {
         </Title>
       </div>
       <Button variant="white" color="dark">
-        <Link to={id.toString()}>View</Link>
+        <Link to={id.toString()} className={classes.link}>View</Link>
       </Button>
     </Paper>
   );

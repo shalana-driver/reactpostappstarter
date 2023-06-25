@@ -1,12 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-a {
+ a {
   text-decoration: none;
   cursor: pointer;
-  color: black;
 }
-
+/*
 a:visited {
   color: black;
 }
@@ -14,9 +13,14 @@ a:visited {
 a.active {
   font-weight: bold;
   color: crimson;
-}
+} */
 
 .logout,
 h4 {
   cursor: pointer;
 }
+
+a.active {
+  font-weight: bold;
+  color:steelblue;
+} 

@@ -40,7 +40,7 @@ export const Router = () => {
         <Route
           path="posts"
           element={
-            <ProtectedRoute isAllowed={!!authCheck}>
+            <ProtectedRoute isAllowed={!!authCheck}> {/**!! returns true if value exists, instead of the value */}
               <PostPage />
             </ProtectedRoute>
           }

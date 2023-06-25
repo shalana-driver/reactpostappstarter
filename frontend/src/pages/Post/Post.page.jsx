@@ -11,7 +11,9 @@ export const PostPage = () => {
     <Container>
       <SimpleGrid cols={3}>
         {posts.map((post) => (
-          <ArticleCardImage key={post.title} {...post} />
+
+          <ArticleCardImage {...post} />
+
         ))}
       </SimpleGrid>
     </Container>

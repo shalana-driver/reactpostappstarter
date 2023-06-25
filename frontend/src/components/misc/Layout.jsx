@@ -1,9 +1,10 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
+import HeaderMegaMenu from "./NavbarUpdated";
 
 const Layout = () => (
   <div>
-    <Navbar />
+    <HeaderMegaMenu />
     <main>
       <Outlet />
     </main>

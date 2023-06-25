@@ -21,7 +21,7 @@ app.post("/api/user/login", (req, res) => {
   try {
     const { email, password } = req.body;
     const user = verifyUser(email, password);
-    const token = jwt.sign({ id: user.id }, "secret", {
+    const token = jwt.sign({ id: user.id }, "secret", {//"secret" should actually be a secret, complex string that "signs" the token makes it so nobody can guess it
       expiresIn: "2 days",
     });
     res.json({ result: { user, token } });
